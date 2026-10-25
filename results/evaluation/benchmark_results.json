@@ -1,0 +1,1091 @@
+{
+  "benchmark_name": "RAG-Scope PDF Evaluation",
+  "document": "data\\documents\\sec_fill.pdf",
+  "total_questions": 30,
+  "answerable_questions": 26,
+  "unanswerable_questions": 4,
+  "generation_success_count": 30,
+  "generation_error_count": 0,
+  "generation_success_rate": 1.0,
+  "answerability_evaluated_count": 30,
+  "answerability_accuracy": 0.8666666666666667,
+  "answerable_generation_count": 26,
+  "answerable_generation_coverage": 1.0,
+  "exact_match_on_successful_answerable_generations": 0.38461538461538464,
+  "answer_containment_on_successful_answerable_generations": 0.5,
+  "exact_match_over_all_answerable_questions": 0.38461538461538464,
+  "page_hit_at_5": 0.8461538461538461,
+  "page_recall_at_5": 0.7692307692307693,
+  "note": "Answerability accuracy excludes generation failures. Answerable generation coverage is the fraction of all answerable questions with a successful, non-empty response. Exact match is strict and does not capture semantically correct paraphrases. The all-answerable exact-match metric counts failed generations as non-matches. Retrieval metrics are page-based proxies, not chunk-level Hit@K, Recall@K, or MRR. Answerability is inferred from the model's refusal wording; citation presence is tracked separately and does not prove that an answer is correct or supported.",
+  "results": [
+    {
+      "id": "q001",
+      "question": "Who signed the Form 8-K?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "Judah Bareli",
+      "predicted_answer": "Judah Bareli",
+      "exact_match": 1.0,
+      "answer_containment": 1.0,
+      "relevant_pages": [
+        3
+      ],
+      "retrieved_pages": [
+        3,
+        1,
+        2,
+        4,
+        2
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0005",
+        "chunk_0000",
+        "chunk_0003",
+        "chunk_0010",
+        "chunk_0004"
+      ],
+      "citation_indexes": [
+        0
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q002",
+      "question": "What is the date of the Form 8-K report?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "October 23, 2026",
+      "predicted_answer": "October 23, 2026",
+      "exact_match": 1.0,
+      "answer_containment": 1.0,
+      "relevant_pages": [
+        1
+      ],
+      "retrieved_pages": [
+        1,
+        2,
+        3,
+        4,
+        2
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0000",
+        "chunk_0003",
+        "chunk_0005",
+        "chunk_0008",
+        "chunk_0004"
+      ],
+      "citation_indexes": [
+        0
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q003",
+      "question": "What is S&P Global's stock trading symbol?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "SPGI",
+      "predicted_answer": "SPGI",
+      "exact_match": 1.0,
+      "answer_containment": 1.0,
+      "relevant_pages": [
+        1
+      ],
+      "retrieved_pages": [
+        4,
+        4,
+        1,
+        8,
+        2
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0006",
+        "chunk_0007",
+        "chunk_0001",
+        "chunk_0018",
+        "chunk_0003"
+      ],
+      "citation_indexes": [
+        2
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q004",
+      "question": "What is S&P Global's IRS Employer Identification Number?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "13-1026995",
+      "predicted_answer": "13-1026995",
+      "exact_match": 1.0,
+      "answer_containment": 1.0,
+      "relevant_pages": [
+        1
+      ],
+      "retrieved_pages": [
+        1,
+        4,
+        2,
+        4,
+        10
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0000",
+        "chunk_0006",
+        "chunk_0003",
+        "chunk_0007",
+        "chunk_0024"
+      ],
+      "citation_indexes": [
+        0
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q005",
+      "question": "What is the address of S&P Global's principal executive offices?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "55 Water Street, New York, New York 10041",
+      "predicted_answer": "55 Water Street, New York, New York 10041",
+      "exact_match": 1.0,
+      "answer_containment": 1.0,
+      "relevant_pages": [
+        1
+      ],
+      "retrieved_pages": [
+        1,
+        4,
+        2,
+        4,
+        3
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0000",
+        "chunk_0006",
+        "chunk_0003",
+        "chunk_0007",
+        "chunk_0005"
+      ],
+      "citation_indexes": [
+        0
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q006",
+      "question": "When was the separation of S&P Global Mobility completed?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "July 1, 2026",
+      "predicted_answer": "The separation was completed on July 1, 2026.",
+      "exact_match": 0.0,
+      "answer_containment": 1.0,
+      "relevant_pages": [
+        2
+      ],
+      "retrieved_pages": [
+        4,
+        4,
+        10,
+        2,
+        4
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0006",
+        "chunk_0007",
+        "chunk_0024",
+        "chunk_0003",
+        "chunk_0008"
+      ],
+      "citation_indexes": [
+        0,
+        3
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q007",
+      "question": "What is Judah Bareli's title at S&P Global?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "Vice President, Associate General Counsel & Corporate Secretary",
+      "predicted_answer": "Vice President, Associate General Counsel & Corporate Secretary",
+      "exact_match": 1.0,
+      "answer_containment": 1.0,
+      "relevant_pages": [
+        3
+      ],
+      "retrieved_pages": [
+        3,
+        4,
+        1,
+        2,
+        4
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0005",
+        "chunk_0006",
+        "chunk_0001",
+        "chunk_0003",
+        "chunk_0007"
+      ],
+      "citation_indexes": [
+        0
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q008",
+      "question": "What is the trading symbol of Mobility Global Inc. after the separation?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "MBGL",
+      "predicted_answer": "MBGL",
+      "exact_match": 1.0,
+      "answer_containment": 1.0,
+      "relevant_pages": [
+        2
+      ],
+      "retrieved_pages": [
+        4,
+        4,
+        2,
+        1,
+        4
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0006",
+        "chunk_0007",
+        "chunk_0003",
+        "chunk_0001",
+        "chunk_0008"
+      ],
+      "citation_indexes": [
+        0,
+        1
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q009",
+      "question": "What was the record date for the Mobility spin-off distribution?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "June 15, 2026",
+      "predicted_answer": "June 15, 2026",
+      "exact_match": 1.0,
+      "answer_containment": 1.0,
+      "relevant_pages": [
+        2
+      ],
+      "retrieved_pages": [
+        4,
+        4,
+        4,
+        2,
+        1
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0006",
+        "chunk_0007",
+        "chunk_0008",
+        "chunk_0003",
+        "chunk_0000"
+      ],
+      "citation_indexes": [
+        0
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q010",
+      "question": "On which stock exchange is Mobility Global Inc. listed?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "New York Stock Exchange",
+      "predicted_answer": "Mobility Global Inc. is listed on the New York Stock Exchange.",
+      "exact_match": 0.0,
+      "answer_containment": 1.0,
+      "relevant_pages": [
+        2
+      ],
+      "retrieved_pages": [
+        4,
+        1,
+        4,
+        2,
+        1
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0006",
+        "chunk_0001",
+        "chunk_0007",
+        "chunk_0003",
+        "chunk_0000"
+      ],
+      "citation_indexes": [
+        0
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q011",
+      "question": "What was S&P Global's historical total revenue for the year ended December 31, 2025?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "$15,336 million",
+      "predicted_answer": "$15,336 million",
+      "exact_match": 1.0,
+      "answer_containment": 1.0,
+      "relevant_pages": [
+        6
+      ],
+      "retrieved_pages": [
+        4,
+        10,
+        6,
+        2,
+        4
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0007",
+        "chunk_0024",
+        "chunk_0013",
+        "chunk_0003",
+        "chunk_0006"
+      ],
+      "citation_indexes": [
+        2
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q012",
+      "question": "What was S&P Global's pro forma revenue for the six months ended June 30, 2026?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "$7,397 million",
+      "predicted_answer": "$7,397 million",
+      "exact_match": 1.0,
+      "answer_containment": 1.0,
+      "relevant_pages": [
+        5
+      ],
+      "retrieved_pages": [
+        10,
+        2,
+        4,
+        4,
+        5
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0024",
+        "chunk_0003",
+        "chunk_0007",
+        "chunk_0006",
+        "chunk_0011"
+      ],
+      "citation_indexes": [
+        4
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q013",
+      "question": "What was S&P Global's pro forma net income from continuing operations attributable to S&P Global Inc. for the year ended December 31, 2025?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "$4,192 million",
+      "predicted_answer": "$3,852",
+      "exact_match": 0.0,
+      "answer_containment": 0.0,
+      "relevant_pages": [
+        6
+      ],
+      "retrieved_pages": [
+        7,
+        8,
+        10,
+        5,
+        6
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0016",
+        "chunk_0018",
+        "chunk_0024",
+        "chunk_0012",
+        "chunk_0014"
+      ],
+      "citation_indexes": [
+        0
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q014",
+      "question": "What was S&P Global's pro forma diluted earnings per share for the six months ended June 30, 2026?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "$8.56",
+      "predicted_answer": "$8.23 per share",
+      "exact_match": 0.0,
+      "answer_containment": 0.0,
+      "relevant_pages": [
+        5
+      ],
+      "retrieved_pages": [
+        8,
+        2,
+        10,
+        7,
+        4
+      ],
+      "page_hit_at_5": 0.0,
+      "page_recall_at_5": 0.0,
+      "retrieved_chunk_ids": [
+        "chunk_0018",
+        "chunk_0003",
+        "chunk_0024",
+        "chunk_0016",
+        "chunk_0007"
+      ],
+      "citation_indexes": [
+        0
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q015",
+      "question": "What was S&P Global's total pro forma assets as of June 30, 2026?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "$49,881 million",
+      "predicted_answer": "S&P Global's total pro forma assets as of June 30, 2026 were $49,881 million.",
+      "exact_match": 0.0,
+      "answer_containment": 1.0,
+      "relevant_pages": [
+        9
+      ],
+      "retrieved_pages": [
+        2,
+        10,
+        4,
+        9,
+        4
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0003",
+        "chunk_0024",
+        "chunk_0006",
+        "chunk_0019",
+        "chunk_0007"
+      ],
+      "citation_indexes": [
+        3
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q016",
+      "question": "What was S&P Global's pro forma goodwill as of June 30, 2026?",
+      "expected_answerable": true,
+      "predicted_answerable": false,
+      "answerability_correct": 0.0,
+      "expected_answer": "$27,489 million",
+      "predicted_answer": "I could not find this information in the provided documents.",
+      "exact_match": 0.0,
+      "answer_containment": 0.0,
+      "relevant_pages": [
+        9
+      ],
+      "retrieved_pages": [
+        2,
+        4,
+        10,
+        4,
+        2
+      ],
+      "page_hit_at_5": 0.0,
+      "page_recall_at_5": 0.0,
+      "retrieved_chunk_ids": [
+        "chunk_0003",
+        "chunk_0006",
+        "chunk_0024",
+        "chunk_0007",
+        "chunk_0004"
+      ],
+      "citation_indexes": [],
+      "has_citations": false,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q017",
+      "question": "What was S&P Global's pro forma long-term debt as of June 30, 2026?",
+      "expected_answerable": true,
+      "predicted_answerable": false,
+      "answerability_correct": 0.0,
+      "expected_answer": "$10,618 million",
+      "predicted_answer": "I could not find this information in the provided documents.",
+      "exact_match": 0.0,
+      "answer_containment": 0.0,
+      "relevant_pages": [
+        9
+      ],
+      "retrieved_pages": [
+        2,
+        10,
+        4,
+        4,
+        4
+      ],
+      "page_hit_at_5": 0.0,
+      "page_recall_at_5": 0.0,
+      "retrieved_chunk_ids": [
+        "chunk_0003",
+        "chunk_0024",
+        "chunk_0006",
+        "chunk_0007",
+        "chunk_0008"
+      ],
+      "citation_indexes": [],
+      "has_citations": false,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q018",
+      "question": "What was S&P Global's historical total revenue for the year ended December 31, 2024?",
+      "expected_answerable": true,
+      "predicted_answerable": false,
+      "answerability_correct": 0.0,
+      "expected_answer": "$14,208 million",
+      "predicted_answer": "I could not find this information in the provided documents.",
+      "exact_match": 0.0,
+      "answer_containment": 0.0,
+      "relevant_pages": [
+        7
+      ],
+      "retrieved_pages": [
+        4,
+        10,
+        6,
+        2,
+        4
+      ],
+      "page_hit_at_5": 0.0,
+      "page_recall_at_5": 0.0,
+      "retrieved_chunk_ids": [
+        "chunk_0007",
+        "chunk_0024",
+        "chunk_0013",
+        "chunk_0003",
+        "chunk_0006"
+      ],
+      "citation_indexes": [],
+      "has_citations": false,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q019",
+      "question": "What was the total transaction accounting adjustment to selling and general expenses for the year ended December 31, 2025, and what caused it?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "A reduction of $35 million, caused by a Transition Services Agreement whereby S&P Global will provide certain post-separation services to Mobility Global on a transitional basis.",
+      "predicted_answer": "The transaction accounting adjustment reduced selling and general expenses by $35 million for the year ended December 31, 2025. The adjustment reflects the impact of a Transition Services Agreement under which S&P Global will provide certain post‑separation services to Mobility Global on a transitional basis.",
+      "exact_match": 0.0,
+      "answer_containment": 0.0,
+      "relevant_pages": [
+        6,
+        10
+      ],
+      "retrieved_pages": [
+        10,
+        10,
+        6,
+        4,
+        5
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0023",
+        "chunk_0024",
+        "chunk_0013",
+        "chunk_0008",
+        "chunk_0011"
+      ],
+      "citation_indexes": [
+        1,
+        2
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q020",
+      "question": "How much did S&P Global's Mobility segment contribute to historical revenue in each year from 2023 to 2025?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "$1,484 million (2023), $1,609 million (2024), $1,747 million (2025)",
+      "predicted_answer": "In 2023, Mobility contributed $1,484 million in historical revenue. The provided documents do not include the Mobility segment’s historical revenue for 2024 or 2025.",
+      "exact_match": 0.0,
+      "answer_containment": 0.0,
+      "relevant_pages": [
+        6,
+        7,
+        8
+      ],
+      "retrieved_pages": [
+        4,
+        2,
+        4,
+        10,
+        8
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 0.3333333333333333,
+      "retrieved_chunk_ids": [
+        "chunk_0007",
+        "chunk_0003",
+        "chunk_0006",
+        "chunk_0024",
+        "chunk_0017"
+      ],
+      "citation_indexes": [
+        4
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q021",
+      "question": "What were the non-recurring separation costs reflected in the pro forma balance sheet as of June 30, 2026, and where are they classified?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "$53 million of additional non-recurring costs (investment banker fees, legal fees, third-party consulting fees) reflected as an increase to other current liabilities and a decrease to retained income.",
+      "predicted_answer": "The pro forma balance sheet as of June 30, 2026 reflects $53 million of non‑recurring separation costs, which are classified within discontinued operations.",
+      "exact_match": 0.0,
+      "answer_containment": 0.0,
+      "relevant_pages": [
+        9,
+        10
+      ],
+      "retrieved_pages": [
+        2,
+        4,
+        10,
+        10,
+        10
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 0.5,
+      "retrieved_chunk_ids": [
+        "chunk_0003",
+        "chunk_0008",
+        "chunk_0023",
+        "chunk_0022",
+        "chunk_0024"
+      ],
+      "citation_indexes": [
+        2,
+        3
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q022",
+      "question": "What were S&P Global's historical and pro forma basic earnings per share for the year ended December 31, 2025?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "Historical basic EPS was $14.67; pro forma basic EPS was $13.75.",
+      "predicted_answer": "Historical basic earnings per share were $8.82 and pro forma basic earnings per share were $8.57 for the year ended December 31, 2025.",
+      "exact_match": 0.0,
+      "answer_containment": 0.0,
+      "relevant_pages": [
+        6
+      ],
+      "retrieved_pages": [
+        8,
+        7,
+        6,
+        5,
+        10
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0018",
+        "chunk_0016",
+        "chunk_0013",
+        "chunk_0012",
+        "chunk_0024"
+      ],
+      "citation_indexes": [
+        3
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q023",
+      "question": "What income tax adjustments were applied in the pro forma statements for the six months ended June 30, 2026 and the year ended December 31, 2025?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "$3 million for the six months ended June 30, 2026 and $9 million for the year ended December 31, 2025, determined by applying relevant statutory tax rates to the jurisdictional mix of income including the pre-tax pro forma adjustment for the Transition Services Agreement.",
+      "predicted_answer": "The pro forma statements include income tax adjustments of $3 million for the six months ended June 30, 2026 and $9 million for the year ended December 31, 2025.",
+      "exact_match": 0.0,
+      "answer_containment": 0.0,
+      "relevant_pages": [
+        5,
+        6,
+        10
+      ],
+      "retrieved_pages": [
+        10,
+        4,
+        5,
+        2,
+        2
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 0.6666666666666666,
+      "retrieved_chunk_ids": [
+        "chunk_0024",
+        "chunk_0008",
+        "chunk_0011",
+        "chunk_0004",
+        "chunk_0003"
+      ],
+      "citation_indexes": [
+        0
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q024",
+      "question": "How did S&P Global's pro forma revenue change from the year ended December 31, 2023 to the year ended December 31, 2025?",
+      "expected_answerable": true,
+      "predicted_answerable": false,
+      "answerability_correct": 0.0,
+      "expected_answer": "Pro forma revenue grew from $11,013 million in 2023 to $13,589 million in 2025, an increase of $2,576 million.",
+      "predicted_answer": "I could not find this information in the provided documents.",
+      "exact_match": 0.0,
+      "answer_containment": 0.0,
+      "relevant_pages": [
+        6,
+        8
+      ],
+      "retrieved_pages": [
+        10,
+        4,
+        2,
+        4,
+        8
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 0.5,
+      "retrieved_chunk_ids": [
+        "chunk_0024",
+        "chunk_0007",
+        "chunk_0003",
+        "chunk_0008",
+        "chunk_0017"
+      ],
+      "citation_indexes": [],
+      "has_citations": false,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q025",
+      "question": "How did S&P Global's pro forma operating profit compare between the year ended December 31, 2024 and the year ended December 31, 2025?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "Pro forma operating profit increased from $5,206 million in 2024 to $6,140 million in 2025, a rise of $934 million.",
+      "predicted_answer": "S&P Global's pro forma operating profit increased from $5,206 million for the year ended December 31 2024 to $6,140 million for the year ended December 31 2025, an increase of $934 million.",
+      "exact_match": 0.0,
+      "answer_containment": 0.0,
+      "relevant_pages": [
+        6,
+        7
+      ],
+      "retrieved_pages": [
+        10,
+        6,
+        2,
+        4,
+        7
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0024",
+        "chunk_0013",
+        "chunk_0003",
+        "chunk_0007",
+        "chunk_0015"
+      ],
+      "citation_indexes": [
+        4,
+        1
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q026",
+      "question": "How did S&P Global's historical total assets compare to its pro forma total assets as of June 30, 2026, and what accounts for the difference?",
+      "expected_answerable": true,
+      "predicted_answerable": true,
+      "answerability_correct": 1.0,
+      "expected_answer": "Historical total assets were $62,906 million versus pro forma total assets of $49,881 million. The difference of $13,025 million represents the assets of the Mobility segment classified as discontinued operations that were separated out.",
+      "predicted_answer": "S&P Global’s historical total assets were $62.9 billion, while the pro forma total assets as of June 30 2026 were $49.9 billion. The $13.0 billion reduction reflects the assets of the Mobility segment that were removed from the balance sheet because the segment was spun off into the independent company Mobility Global and classified as discontinued operations.",
+      "exact_match": 0.0,
+      "answer_containment": 0.0,
+      "relevant_pages": [
+        9
+      ],
+      "retrieved_pages": [
+        2,
+        4,
+        9,
+        4,
+        10
+      ],
+      "page_hit_at_5": 1.0,
+      "page_recall_at_5": 1.0,
+      "retrieved_chunk_ids": [
+        "chunk_0003",
+        "chunk_0007",
+        "chunk_0019",
+        "chunk_0006",
+        "chunk_0024"
+      ],
+      "citation_indexes": [
+        2
+      ],
+      "has_citations": true,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q027",
+      "question": "What will S&P Global's total revenue be for the full year ended December 31, 2026?",
+      "expected_answerable": false,
+      "predicted_answerable": false,
+      "answerability_correct": 1.0,
+      "expected_answer": "UNANSWERABLE – The document only contains data for the six months ended June 30, 2026 and prior full years; H2 2026 results are not included.",
+      "predicted_answer": "I could not find this information in the provided documents.",
+      "exact_match": null,
+      "answer_containment": null,
+      "relevant_pages": [],
+      "retrieved_pages": [
+        4,
+        10,
+        2,
+        4,
+        6
+      ],
+      "page_hit_at_5": null,
+      "page_recall_at_5": null,
+      "retrieved_chunk_ids": [
+        "chunk_0007",
+        "chunk_0024",
+        "chunk_0003",
+        "chunk_0008",
+        "chunk_0013"
+      ],
+      "citation_indexes": [],
+      "has_citations": false,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q028",
+      "question": "What is the name of the investment bank that advised S&P Global on the Mobility separation?",
+      "expected_answerable": false,
+      "predicted_answerable": false,
+      "answerability_correct": 1.0,
+      "expected_answer": "UNANSWERABLE – The document references investment banker fees in the separation costs but does not name the investment bank.",
+      "predicted_answer": "I could not find this information in the provided documents.",
+      "exact_match": null,
+      "answer_containment": null,
+      "relevant_pages": [],
+      "retrieved_pages": [
+        4,
+        4,
+        10,
+        2,
+        10
+      ],
+      "page_hit_at_5": null,
+      "page_recall_at_5": null,
+      "retrieved_chunk_ids": [
+        "chunk_0006",
+        "chunk_0007",
+        "chunk_0023",
+        "chunk_0003",
+        "chunk_0022"
+      ],
+      "citation_indexes": [],
+      "has_citations": false,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q029",
+      "question": "What percentage of S&P Global employees transferred to Mobility Global Inc. as part of the separation?",
+      "expected_answerable": false,
+      "predicted_answerable": false,
+      "answerability_correct": 1.0,
+      "expected_answer": "UNANSWERABLE – The document contains no information about employee headcount or workforce transfers related to the separation.",
+      "predicted_answer": "I could not find this information in the provided documents.",
+      "exact_match": null,
+      "answer_containment": null,
+      "relevant_pages": [],
+      "retrieved_pages": [
+        4,
+        4,
+        2,
+        8,
+        7
+      ],
+      "page_hit_at_5": null,
+      "page_recall_at_5": null,
+      "retrieved_chunk_ids": [
+        "chunk_0006",
+        "chunk_0007",
+        "chunk_0003",
+        "chunk_0018",
+        "chunk_0016"
+      ],
+      "citation_indexes": [],
+      "has_citations": false,
+      "generation_success": true,
+      "generation_error": null
+    },
+    {
+      "id": "q030",
+      "question": "What was Mobility Global Inc.'s standalone revenue in the first quarter of 2026?",
+      "expected_answerable": false,
+      "predicted_answerable": false,
+      "answerability_correct": 1.0,
+      "expected_answer": "UNANSWERABLE – The document reports Mobility's discontinued operations only on a six-month basis (H1 2026) and does not break down revenue by individual quarters.",
+      "predicted_answer": "I could not find this information in the provided documents.",
+      "exact_match": null,
+      "answer_containment": null,
+      "relevant_pages": [],
+      "retrieved_pages": [
+        4,
+        4,
+        10,
+        4,
+        2
+      ],
+      "page_hit_at_5": null,
+      "page_recall_at_5": null,
+      "retrieved_chunk_ids": [
+        "chunk_0006",
+        "chunk_0007",
+        "chunk_0024",
+        "chunk_0008",
+        "chunk_0003"
+      ],
+      "citation_indexes": [],
+      "has_citations": false,
+      "generation_success": true,
+      "generation_error": null
+    }
+  ]
+}

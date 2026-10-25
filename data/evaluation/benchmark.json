@@ -1,0 +1,307 @@
+{
+  "benchmark_name": "RAG-Scope PDF Evaluation",
+  "version": "1.0",
+  "document": "sec_fill.pdf",
+  "questions": [
+    {
+      "id": "q001",
+      "question": "Who signed the Form 8-K?",
+      "expected_answer": "Judah Bareli",
+      "relevant_pages": [
+        3
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q002",
+      "question": "What is the date of the Form 8-K report?",
+      "expected_answer": "October 23, 2026",
+      "relevant_pages": [
+        1
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q003",
+      "question": "What is S&P Global's stock trading symbol?",
+      "expected_answer": "SPGI",
+      "relevant_pages": [
+        1
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q004",
+      "question": "What is S&P Global's IRS Employer Identification Number?",
+      "expected_answer": "13-1026995",
+      "relevant_pages": [
+        1
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q005",
+      "question": "What is the address of S&P Global's principal executive offices?",
+      "expected_answer": "55 Water Street, New York, New York 10041",
+      "relevant_pages": [
+        1
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q006",
+      "question": "When was the separation of S&P Global Mobility completed?",
+      "expected_answer": "July 1, 2026",
+      "relevant_pages": [
+        2
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q007",
+      "question": "What is Judah Bareli's title at S&P Global?",
+      "expected_answer": "Vice President, Associate General Counsel & Corporate Secretary",
+      "relevant_pages": [
+        3
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q008",
+      "question": "What is the trading symbol of Mobility Global Inc. after the separation?",
+      "expected_answer": "MBGL",
+      "relevant_pages": [
+        2
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q009",
+      "question": "What was the record date for the Mobility spin-off distribution?",
+      "expected_answer": "June 15, 2026",
+      "relevant_pages": [
+        2
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q010",
+      "question": "On which stock exchange is Mobility Global Inc. listed?",
+      "expected_answer": "New York Stock Exchange",
+      "relevant_pages": [
+        2
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q011",
+      "question": "What was S&P Global's historical total revenue for the year ended December 31, 2025?",
+      "expected_answer": "$15,336 million",
+      "relevant_pages": [
+        6
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q012",
+      "question": "What was S&P Global's pro forma revenue for the six months ended June 30, 2026?",
+      "expected_answer": "$7,397 million",
+      "relevant_pages": [
+        5
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q013",
+      "question": "What was S&P Global's pro forma net income from continuing operations attributable to S&P Global Inc. for the year ended December 31, 2025?",
+      "expected_answer": "$4,192 million",
+      "relevant_pages": [
+        6
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q014",
+      "question": "What was S&P Global's pro forma diluted earnings per share for the six months ended June 30, 2026?",
+      "expected_answer": "$8.56",
+      "relevant_pages": [
+        5
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q015",
+      "question": "What was S&P Global's total pro forma assets as of June 30, 2026?",
+      "expected_answer": "$49,881 million",
+      "relevant_pages": [
+        9
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q016",
+      "question": "What was S&P Global's pro forma goodwill as of June 30, 2026?",
+      "expected_answer": "$27,489 million",
+      "relevant_pages": [
+        9
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q017",
+      "question": "What was S&P Global's pro forma long-term debt as of June 30, 2026?",
+      "expected_answer": "$10,618 million",
+      "relevant_pages": [
+        9
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q018",
+      "question": "What was S&P Global's historical total revenue for the year ended December 31, 2024?",
+      "expected_answer": "$14,208 million",
+      "relevant_pages": [
+        7
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q019",
+      "question": "What was the total transaction accounting adjustment to selling and general expenses for the year ended December 31, 2025, and what caused it?",
+      "expected_answer": "A reduction of $35 million, caused by a Transition Services Agreement whereby S&P Global will provide certain post-separation services to Mobility Global on a transitional basis.",
+      "relevant_pages": [
+        6,
+        10
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q020",
+      "question": "How much did S&P Global's Mobility segment contribute to historical revenue in each year from 2023 to 2025?",
+      "expected_answer": "$1,484 million (2023), $1,609 million (2024), $1,747 million (2025)",
+      "relevant_pages": [
+        6,
+        7,
+        8
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q021",
+      "question": "What were the non-recurring separation costs reflected in the pro forma balance sheet as of June 30, 2026, and where are they classified?",
+      "expected_answer": "$53 million of additional non-recurring costs (investment banker fees, legal fees, third-party consulting fees) reflected as an increase to other current liabilities and a decrease to retained income.",
+      "relevant_pages": [
+        9,
+        10
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q022",
+      "question": "What were S&P Global's historical and pro forma basic earnings per share for the year ended December 31, 2025?",
+      "expected_answer": "Historical basic EPS was $14.67; pro forma basic EPS was $13.75.",
+      "relevant_pages": [
+        6
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q023",
+      "question": "What income tax adjustments were applied in the pro forma statements for the six months ended June 30, 2026 and the year ended December 31, 2025?",
+      "expected_answer": "$3 million for the six months ended June 30, 2026 and $9 million for the year ended December 31, 2025, determined by applying relevant statutory tax rates to the jurisdictional mix of income including the pre-tax pro forma adjustment for the Transition Services Agreement.",
+      "relevant_pages": [
+        5,
+        6,
+        10
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q024",
+      "question": "How did S&P Global's pro forma revenue change from the year ended December 31, 2023 to the year ended December 31, 2025?",
+      "expected_answer": "Pro forma revenue grew from $11,013 million in 2023 to $13,589 million in 2025, an increase of $2,576 million.",
+      "relevant_pages": [
+        6,
+        8
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q025",
+      "question": "How did S&P Global's pro forma operating profit compare between the year ended December 31, 2024 and the year ended December 31, 2025?",
+      "expected_answer": "Pro forma operating profit increased from $5,206 million in 2024 to $6,140 million in 2025, a rise of $934 million.",
+      "relevant_pages": [
+        6,
+        7
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q026",
+      "question": "How did S&P Global's historical total assets compare to its pro forma total assets as of June 30, 2026, and what accounts for the difference?",
+      "expected_answer": "Historical total assets were $62,906 million versus pro forma total assets of $49,881 million. The difference of $13,025 million represents the assets of the Mobility segment classified as discontinued operations that were separated out.",
+      "relevant_pages": [
+        9
+      ],
+      "answerable": true,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q027",
+      "question": "What will S&P Global's total revenue be for the full year ended December 31, 2026?",
+      "expected_answer": "UNANSWERABLE \u2013 The document only contains data for the six months ended June 30, 2026 and prior full years; H2 2026 results are not included.",
+      "relevant_pages": [],
+      "answerable": false,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q028",
+      "question": "What is the name of the investment bank that advised S&P Global on the Mobility separation?",
+      "expected_answer": "UNANSWERABLE \u2013 The document references investment banker fees in the separation costs but does not name the investment bank.",
+      "relevant_pages": [],
+      "answerable": false,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q029",
+      "question": "What percentage of S&P Global employees transferred to Mobility Global Inc. as part of the separation?",
+      "expected_answer": "UNANSWERABLE \u2013 The document contains no information about employee headcount or workforce transfers related to the separation.",
+      "relevant_pages": [],
+      "answerable": false,
+      "relevant_chunk_ids": []
+    },
+    {
+      "id": "q030",
+      "question": "What was Mobility Global Inc.'s standalone revenue in the first quarter of 2026?",
+      "expected_answer": "UNANSWERABLE \u2013 The document reports Mobility's discontinued operations only on a six-month basis (H1 2026) and does not break down revenue by individual quarters.",
+      "relevant_pages": [],
+      "answerable": false,
+      "relevant_chunk_ids": []
+    }
+  ]
+}

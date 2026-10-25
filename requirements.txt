@@ -1,0 +1,9 @@
+groq
+python-dotenv
+pypdf
+sentence-transformers
+faiss-cpu
+numpy
+streamlit
+pytest
+rank-bm25
